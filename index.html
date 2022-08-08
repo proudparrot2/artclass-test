@@ -6,15 +6,25 @@
 </head>
 
 <body>
-    <div class="dropdown">
-        <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
-        <div class="dropdown-content">
-        <a href="/games.html"><i class="fa-solid fa-joystick"></i>🎮 Games</a>
-        <a href="#">💻 Apps</a>
-        <a href="#">Link 3</a>
+    <div id="myNav" class="overlay">
+        <span style="font-size:30px;cursor:pointer;" class="closebtn" onclick="openNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
         </div>
-    <div>
-
-    <h1>hi</h1>
+      </div>
+      <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776;</span>
     
 </body>
+
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+    </script>

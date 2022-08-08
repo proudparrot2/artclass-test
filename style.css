@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=DM+Sans&family=Roboto&display=swap');
 
 body {
-    background-color: #182a69;
-    color: #f9f9f9;
-    font-family: "DM Sans";
-    text-align: center;
+  font-family: 'Lato', sans-serif;
+  display: inline;
+  text-align: center;
+  background-color: #182a69;
 }
 
 h1 {
     font-family: "Bungee";
-    text-align: center;
 }
 
 p {
@@ -18,46 +17,53 @@ p {
 
 
 
-.dropbtn {
-    background-color: #474e66;
-    color: white;
-    padding: 16px;
-    font-size: 32px;
-    border: none;
-    cursor: pointer;
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
   }
-  
-  .dropdown {
-    position: absolute;
-    left: 15px;
-    top: 15px;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #0d1739;
-    color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {background-color: #03c179}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-    background-color: #182a69;
-  }
+}
