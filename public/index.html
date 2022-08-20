@@ -1,13 +1,57 @@
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              darkBlue: "#084277",
+              niceWhite: "#F9FAFB",
+              lightLime: "#3AD97B",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../src/css/index.css" />
     <title>Art Class v2</title>
-    <link rel="stylesheet" type="text/css" href="./output.css" />
   </head>
   <body>
-    <h1>Start on the 20th</h1>
+    <div x-data="{open: false, name: Biryani}">
+      <h1 class="text-4xl bg-black text-white">Alpine demo</h1>
+      <button
+        type="button"
+        x-on:click="open = !open"
+        class="bg-slate-700 text-niceWhite rounded px-3 py-2 mx-2 my-4"
+      >
+        Toggle navbar
+      </button>
+      <div x-show="open" x-cloak>
+        <ul class="text-niceWhite bg-darkBlue my-1 flex">
+          <li class="bg-lightLime m-1 px-6 py-[2px] w-auto">
+            <a href="#">About</a>
+          </li>
+          <li class="bg-lightLime m-1 px-6 py-[2px] w-auto">
+            <a href="#">Contact</a>
+          </li>
+          <li class="bg-lightLime m-1 px-6 py-[2px] w-auto">
+            <a href="#">Idk</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Cool paragraph -->
+      <div class="my-4">
+        The best food is <span x-text="name" class="font-bold"></span>
+      </div>
+    </div>
   </body>
 </html>
