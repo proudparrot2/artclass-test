@@ -1,4 +1,4 @@
-<html lang="en" class="">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,32 +25,26 @@
     <link rel="stylesheet" type="text/css" href="../src/css/index.css" />
     <title>Art Class v2</title>
   </head>
-  <body>
-    <div x-data="{open: false, name: Biryani}">
-      <h1 class="text-4xl bg-black text-white">Alpine demo</h1>
-      <button
-        type="button"
-        x-on:click="open = !open"
-        class="bg-slate-700 text-niceWhite rounded px-3 py-2 mx-2 my-4 hover:bg-slate-900"
-      >
-        Toggle navbar
-      </button>
-      <div x-show="open" x-cloak>
-        <ul class="text-niceWhite bg-darkBlue my-1 flex">
-          <li class="bg-lightLime m-1 px-6 py-[2px] w-auto">
+  <body >
+    <div x-data="{open: false}">
+      <nav class="flex bg-darkBlue">
+        <ul class="text-niceWhite my-1 flex">
+          <li
+            class="hover:bg-lightLime transition m-1 px-6 py-[2px] w-auto rounded"
+          >
             <a href="#">About</a>
           </li>
-          <li class="bg-lightLime m-1 px-6 py-[2px] w-auto">
+          <li
+            class="hover:bg-lightLime transition m-1 px-6 py-[2px] w-auto rounded"
+          >
             <a href="#">Contact</a>
           </li>
-          <li class="bg-lightLime m-1 px-6 py-[2px] w-auto">
+          <li
+            class="hover:bg-lightLime transition m-1 px-6 py-[2px] w-auto rounded"
+          >
             <a href="#">Idk</a>
           </li>
         </ul>
-      </div>
-      <!-- Cool paragraph -->
-      <div class="my-4">
-        The best food is <span x-text="name" class="font-bold"></span>
       </div>
     </div>
   </body>
