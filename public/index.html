@@ -15,6 +15,10 @@
               niceWhite: "#F9FAFB",
               lightLime: "#3AD97B",
             },
+            fontFamily: {
+              dmSans: "'DM Sans', sans-serif",
+              silkscreen: "'Silkscreen', cursive",
+            },
           },
         },
       };
@@ -27,33 +31,96 @@
       }
     </style>
     <link rel="stylesheet" type="text/css" href="../src/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Art Class v2</title>
   </head>
   <body>
     <nav
       x-data="{scrolledFromTop: false}"
       @scroll.window="window.pageYOffset >= 80 ? scrolledFromTop = true : scrolledFromTop = false"
-      class="fixed flex py-2 w-full bg-darkBlue transition"
+      class="fixed justify-between items-center flex py-2 w-full bg-darkBlue transition"
       :class="{'bg-gray-500': scrolledFromTop}"
     >
       <div>
-        <img
-          src="https://cdn.discordapp.com/icons/967446591373983804/73e7d67e64f4ce17a0bb03ef38ec6611.png?size=256"
-          alt="artclass logo"
-          class="w-auto h-11 mx-4 rounded-full"
-        />
+        <a href="#">
+          <img
+            src="https://cdn.discordapp.com/icons/967446591373983804/73e7d67e64f4ce17a0bb03ef38ec6611.png?size=256"
+            alt="artclass logo"
+            class="w-auto h-11 mx-4 rounded-full float-left"
+          />
+        </a>
+        <ul
+          class="text-niceWhite my-1 mx-2 font-dmSans font-medium hidden md:flex"
+        >
+          <li
+            class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker"
+          >
+            <a href="#">About</a>
+          </li>
+          <li
+            class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker"
+          >
+            <a href="#">Contact</a>
+          </li>
+          <li
+            class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker"
+          >
+            <a href="#">Idk</a>
+          </li>
+        </ul>
       </div>
-      <ul class="text-niceWhite my-1 mx-2 flex">
-        <li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker">
-          <a href="#">About</a>
-        </li>
-        <li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker">
-          <a href="#">Contact</a>
-        </li>
-        <li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker">
-          <a href="#">Idk</a>
-        </li>
-      </ul>
+      <div class="flex md:hidden" x-data="{menu: false}">
+        <button type="button" class="px-2" @click="menu = !menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+        <div class="hidden" :class="{'flex': menu}">
+          <div
+            class="bg-darker absolute top-[60px] left-0 h-screen w-screen hidden sm:flex"
+          ></div>
+          <ul
+            class="text-niceWhite text-lg sm:text-base flex absolute right-0 top-[60px] h-screen px-2 flex-col items-center font-dmSans font-semibold sm:font-medium bg-darkBlue w-screen sm:w-auto"
+            :class="{'bg-gray-500': scrolledFromTop}"
+          >
+            <li
+              class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker"
+            >
+              <a href="#">About</a>
+            </li>
+            <li
+              class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker"
+            >
+              <a href="#">Contact</a>
+            </li>
+            <li
+              class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker"
+            >
+              <a href="#">Idk</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </body>
 </html>
