@@ -45,9 +45,10 @@
   </head>
   <body>
     <nav
-      x-data="{scrolledFromTop: false}"
+      x-data="{scrolledFromTop: false, menu: false}"
       @scroll.window="window.pageYOffset >= 800 ? scrolledFromTop = true : scrolledFromTop = false"
-      class="fixed justify-between items-center flex py-2 w-full bg-darkBlue transition"
+      class="fixed justify-between items-center flex py-2 w-full bg-transparent transition"
+      :class="{'bg-darkBlue': menu}"
       :class="{'bg-gray-500': scrolledFromTop}"
     >
       <a href="#">
@@ -70,15 +71,8 @@
           <a href="#">Idk</a>
         </li>
       </ul>
-      <div
-        class="flex md:hidden"
-        x-data="{menu: false, path: 'M4 6h16M4 12h16M4 18h16'}"
-      >
-        <button
-          type="button"
-          class="px-2"
-          @click="menu = !menu, path = 'M6 18L18 6M6 6l12 12'"
-        >
+      <div class="flex md:hidden">
+        <button type="button" class="px-2" @click="menu = !menu">
           <p class="text-transparent absolute">a</p>
           <template x-if="!menu">
             <svg
@@ -140,12 +134,14 @@
         </div>
       </div>
     </nav>
-    <section class="h-[80vh] bg-darkBlue flex items-center justify-center">
+    <section
+      class="h-[80vh] bg-gradient-to-br from-blue-400 to-darkBlue flex items-center justify-center"
+    >
       <div class="items-center flex justify-center flex-col">
         <h1
           class="font-silkscreen text-5xl max-w-xs font-bold text-center text-niceWhite"
         >
-          The one place for the best pr0ccies
+          Cool title
         </h1>
         <a
           href="#"
@@ -191,7 +187,7 @@
             </svg>
           </span>
           <span
-            class="relative w-full text-left text-xl transition-colors duration-200 ease-in-out group-hover:text-niceWhite"
+            class="relative w-full text-left font-dmSans text-xl transition-colors duration-200 ease-in-out group-hover:text-niceWhite"
             >Get Started</span
           >
         </a>
