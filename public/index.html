@@ -46,7 +46,7 @@
   <body>
     <nav
       x-data="{scrolledFromTop: false}"
-      @scroll.window="window.pageYOffset >= 80 ? scrolledFromTop = true : scrolledFromTop = false"
+      @scroll.window="window.pageYOffset >= 800 ? scrolledFromTop = true : scrolledFromTop = false"
       class="fixed justify-between items-center flex py-2 w-full bg-darkBlue transition"
       :class="{'bg-gray-500': scrolledFromTop}"
     >
@@ -148,5 +148,6 @@
         </div>
       </div>
     </nav>
+    <section class="h-[80vh] bg-darkBlue">a</section>
   </body>
 </html>
