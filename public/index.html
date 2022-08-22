@@ -12,6 +12,7 @@
             colors: {
               darker: "rgba(0, 0, 0, 0.2)",
               darkBlue: "#084277",
+              sweetBlue: "#1468b5",
               niceWhite: "#F9FAFB",
               lightLime: "#3AD97B",
             },
@@ -48,7 +49,7 @@
       x-data="{scrolledFromTop: false, menu: false}"
       @scroll.window="window.pageYOffset >= 800 ? scrolledFromTop = true : scrolledFromTop = false"
       class="fixed justify-between items-center flex py-2 w-full bg-transparent transition"
-      :class="{'bg-darkBlue': menu}"
+      :class="{'bg-sweetBlue': menu}"
       :class="{'bg-gray-500': scrolledFromTop}"
     >
       <a href="#">
@@ -112,7 +113,7 @@
             class="bg-darker absolute top-[60px] left-0 h-screen w-screen hidden sm:flex"
           ></div>
           <ul
-            class="text-niceWhite text-lg sm:text-base flex absolute right-0 top-[60px] h-screen px-2 flex-col items-center font-dmSans font-semibold sm:font-medium bg-darkBlue w-screen sm:w-auto"
+            class="text-niceWhite text-lg sm:text-base flex absolute right-0 top-[60px] h-screen px-2 flex-col items-center font-dmSans font-semibold sm:font-medium bg-sweetBlue w-screen sm:w-auto"
             :class="{'bg-gray-500': scrolledFromTop}"
           >
             <li
@@ -148,7 +149,7 @@
           class="relative inline-flex items-center justify-start py-5 pl-7 pr-20 my-[2em] overflow-hidden font-semibold text-blue-500 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group"
         >
           <span
-            class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-blue-500 group-hover:h-full"
+            class="absolute bottom-0 left-0 w-full h-0 transition-all duration-150 ease-in-out bg-blue-500 group-hover:h-full"
           ></span>
           <span
             class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12"
