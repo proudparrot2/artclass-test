@@ -50,34 +50,26 @@
       class="fixed justify-between items-center flex py-2 w-full bg-darkBlue transition"
       :class="{'bg-gray-500': scrolledFromTop}"
     >
-      <div>
-        <a href="#">
-          <img
-            src="https://cdn.discordapp.com/icons/967446591373983804/73e7d67e64f4ce17a0bb03ef38ec6611.png?size=256"
-            alt="artclass logo"
-            class="w-auto h-11 mx-4 rounded-full float-left"
-          />
-        </a>
-        <ul
-          class="text-niceWhite my-1 mx-2 font-dmSans font-medium hidden md:flex"
-        >
-          <li
-            class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker"
-          >
-            <a href="#">About</a>
-          </li>
-          <li
-            class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker"
-          >
-            <a href="#">Contact</a>
-          </li>
-          <li
-            class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker"
-          >
-            <a href="#">Idk</a>
-          </li>
-        </ul>
-      </div>
+      <a href="#">
+        <img
+          src="https://cdn.discordapp.com/icons/967446591373983804/73e7d67e64f4ce17a0bb03ef38ec6611.png?size=256"
+          alt="artclass logo"
+          class="w-auto h-11 mx-4 rounded-full float-left"
+        />
+      </a>
+      <ul
+        class="text-niceWhite my-1 mx-2 font-dmSans font-medium hidden md:flex"
+      >
+        <li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker">
+          <a href="#">About</a>
+        </li>
+        <li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker">
+          <a href="#">Contact</a>
+        </li>
+        <li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker">
+          <a href="#">Idk</a>
+        </li>
+      </ul>
       <div
         class="flex md:hidden"
         x-data="{menu: false, path: 'M4 6h16M4 12h16M4 18h16'}"
