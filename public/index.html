@@ -71,7 +71,7 @@
         <li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker">
           <a href="#news">News</a>
         </li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker">
-        <li>Products</li>
+        <li><a href="#products">Products</a></li>
       </ul>
       <div class="flex md:hidden">
         <button type="button" class="px-2" @click="menu = !menu">
@@ -212,7 +212,9 @@
         </a>
       </div>
     </section>
-    <section id="news">This is where something important is</section>
+    
+    <section id="news" class="min-h-[100vh] bg-yellow-600">This is where something important is</section>
+    <section if="products" class="min-h-[100vh] bg-indigo-600"></section>
     <section id="about" class="min-h-[100vh] bg-red-600">
       This is the about section
     </section>
