@@ -48,7 +48,7 @@
   <body x-data="{menu: false}">
     <nav
       x-data="{scrolledFromTop: false}"
-      @scroll.window="window.pageYOffset >= 725 ? scrolledFromTop = true : scrolledFromTop = false"
+      @scroll.window="window.pageYOffset >= 600 ? scrolledFromTop = true : scrolledFromTop = false"
       class="fixed justify-between items-center flex py-2 w-full bg-transparent transition-all"
       :class="{'bg-gray-500': scrolledFromTop, 'bg-sweetBlue': menu}"
     >
