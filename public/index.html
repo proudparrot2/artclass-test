@@ -49,7 +49,7 @@
     <nav
       x-data="{scrolledFromTop: false}"
       @scroll.window="window.pageYOffset >= 600 ? scrolledFromTop = true : scrolledFromTop = false"
-      class="sticky justify-between items-center flex py-2 w-full bg-transparent transition-all"
+      class="fixed justify-between items-center flex py-2 w-full bg-transparent transition-all"
       :class="{'bg-gray-500': scrolledFromTop, 'bg-sweetBlue': menu}"
     >
       <a href="#home">
