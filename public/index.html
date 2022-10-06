@@ -47,8 +47,8 @@
   </head>
   <body x-data="{menu: false}">
     <nav
-      x-data="{scrolledFromTop: false, text: 0}"
-      @scroll.window="text = window.pageYOffset"
+      x-data="{scrolledFromTop: false}"
+      @scroll.window="window.pageYOffset >= 360 ? scrolledFromTop = true : scrolledFromTop = false"
       class="fixed top-0 justify-between items-center flex py-2 w-full bg-transparent transition-all"
       :class="{'bg-gray-500': scrolledFromTop, 'bg-sweetBlue': menu}"
     >
@@ -58,7 +58,7 @@
           alt="artclass logo"
           class="w-auto h-11 mx-4 rounded-full float-left"
         />
-      </a><p x-text="text"></p>
+      </a>
       <ul
         class="text-niceWhite my-1 mx-2 font-dmSans font-medium hidden md:flex"
       >
