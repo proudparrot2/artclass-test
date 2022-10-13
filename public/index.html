@@ -112,11 +112,8 @@
           </template>
         </button>
         <div x-show="menu" x-cloak>
-          <div
-            class="bg-darker absolute top-[60px] left-0 h-screen w-screen hidden sm:flex"
-          ></div>
           <ul
-            class="text-niceWhite text-lg sm:text-base flex absolute right-0 top-[60px] h-screen px-2 flex-col items-center font-dmSans font-semibold sm:font-medium bg-sweetBlue w-screen sm:w-auto"
+            class="text-niceWhite text-lg sm:text-base flex absolute right-0 top-[60px] h-screen w-screen px-2 flex-col items-center font-dmSans font-semibold sm:font-medium bg-sweetBlue"
             :class="{'bg-gray-500': scrolledFromTop}"
           >
             <li
@@ -161,6 +158,8 @@
             src="../src/assets/logo-outline.png"
             alt="big art class logo"
             class="w-auto h-[13em] absolute"
+            x-if="!menu"
+            x-show="!menu"
           />
         </div>
         <a
