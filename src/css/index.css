@@ -10,3 +10,24 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.hero-bottom-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.hero-bottom-wave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 52px;
+}
+
+.hero-bottom-wave .shape-fill {
+  fill: #FFFFFF;
+}
