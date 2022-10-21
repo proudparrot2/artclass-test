@@ -222,58 +222,57 @@
       This is the about section
     </section>
     <section id="contact" class="min-h-[100vh] bg-gray-400"></section>
-    <section id="cta" class="min-h-[20em] bg-darkBlue items-center justify-center flex flex-col text-center text-white"></section>
-      <h1 class="font-3xl">What are you waiting for?</h1>
-      <p class="font-lg">We have everything you need and more! Get started today</p>
-      <a
-        x-show="!menu"
-        href="#products"
-        class="relative inline-flex items-center justify-start py-5 pl-7 pr-20 my-[2em] overflow-hidden font-semibold text-sweetBlue transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group"
-      >
-        <span
-          class="absolute bottom-0 left-0 w-full h-0 transition-all duration-150 ease-in-out bg-darkBlue group-hover:h-full"
-        ></span>
-        <span
-          class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12"
+    <section id="cta" class="bg-darkBlue items-center justify-center flex flex-col text-center text-white"></section>
+      <div class="bg-darkBlue min-h-[20em]">
+        <h1 class="font-3xl">What are you waiting for?</h1>
+        <p class="font-lg">We have everything you need and more! Get started today</p>
+        <a
+          x-show="!menu"
+          href="#products"
+          class="relative inline-flex items-center justify-start py-5 pl-7 pr-20 my-[2em] overflow-hidden font-semibold text-sweetBlue transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group"
         >
-          <svg
-            class="w-6 h-6 text-lightLime"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+          <span
+            class="absolute bottom-0 left-0 w-full h-0 transition-all duration-150 ease-in-out bg-shadowBlue group-hover:h-full"
+          ></span>
+          <span
+            class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M14 5l7 7m0 0l-7 7m7-7H3"
-            ></path>
-          </svg>
-        </span>
-        <span
-          class="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200"
-        >
-          <svg
-            class="w-6 h-6 text-lightLime"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+            <svg
+              class="w-6 h-6 text-lightLime"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
+          </span>
+          <span
+            class="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M14 5l7 7m0 0l-7 7m7-7H3"
-            ></path>
-          </svg>
-        </span>
-        <span
-          class="relative w-full text-left font-dmSans text-xl transition-colors duration-200 ease-in-out group-hover:text-niceWhite"
-          >Get Started</span
-        >
-      </a>
+            <svg
+              class="w-6 h-6 text-lightLime"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              ></path>
+            </svg>
+          </span>
+          <span class="relative w-full text-left font-dmSans text-xl transition-colors duration-200 ease-in-out group-hover:text-niceWhite">Get Started</span>
+        </a>
+      </div>
     </section>
     <footer class="bg-shadowBlue px-6 pt-6 pb-3">
       <div class="pb-3 flex text-center items-center justify-center">
