@@ -6,7 +6,7 @@ Artclass is a place were you can get your mind off school and relax. We all know
 
 ### Tailwind CSS
 
-In this project we are using Tailwind css for minimal css code and to easily use utility classes in our project. It can be found in the `index.html` in the `public` folder ```<script src="https://cdn.tailwindcss.com"></script>```.
+In this project we are using Tailwind css for minimal css code and to easily use utility classes in our project. It can be found in the `index.html` in the `public` folder ```<script src="https://cdn.tailwindcss.com"></script>.
 
 ### Alpine.js
 
