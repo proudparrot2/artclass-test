@@ -343,13 +343,14 @@
           <p
             x-data="{ messageOne: 'Copyright © ', messageTwo: ' Art Class Inc. All rights reserved.', year: new Date().getFullYear() }"
             x-text="messageOne + year + messageTwo"
+            x-on:click="window.open('https://www.apache.org/licenses/LICENSE-2.0')"
           >
             >
           </p>
         </div>
         <div class="flex">
-          <p class="mr-[1rem] hover:underline">Terms of Service</p>
-          <p class="hover:underline">Privacy Policy</p>
+          <p class="mr-[1rem] hover:underline" x-on:click="window.open()">Terms of Service</p>
+          <p class="hover:underline" x-on:click="window.open()>Privacy Policy</p>
         </div>
       </div>
     </footer>
