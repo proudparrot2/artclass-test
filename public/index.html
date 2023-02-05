@@ -336,13 +336,22 @@
           </li>
         </ul>
       </div>
-      <p
-        x-data="{ messageOne: 'Copyright © ', messageTwo: ' Art Class Inc. All rights reserved.', year: new Date().getFullYear() }"
-        x-text="messageOne + year + messageTwo"
-        class="text-niceWhite text-sm text-medium text-center justify-center items-center"
+      <div
+        class="text-niceWhite text-sm text-medium text-center justify-between items-center"
       >
-        >
-      </p>
+        <div>
+          <p
+            x-data="{ messageOne: 'Copyright © ', messageTwo: ' Art Class Inc. All rights reserved.', year: new Date().getFullYear() }"
+            x-text="messageOne + year + messageTwo"
+          >
+            >
+          </p>
+        </div>
+        <div>
+          <p class="mr-[1rem] hover:underline">Terms of Service</p>
+          <p class="hover:underline">Privacy Policy</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
