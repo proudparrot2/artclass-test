@@ -4,7 +4,7 @@ Artclass is a place were you can get your mind off school and relax. We all know
 
 ## Repo
 
-This is the Artclass Site v4 repository the will include the most features and other stuff.
+This is the Artclass Site v4 repository.
 
 ## Tools:
 
