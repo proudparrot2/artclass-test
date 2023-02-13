@@ -10,3 +10,8 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.product-a {
+  padding: 15px 20px;
+  margin: 20px 50px;
+}
