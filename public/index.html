@@ -316,32 +316,39 @@
       <h2 class="self-center">News</h2>
       news stuff idk
     </section>
-    <section id="contact" class="py-[4rem] bg-gray-100">
+    <section id="contact" class="py-[4rem] bg-gray-100 items-center justify-center flex flex-col">
       <h2 class="text-center text-4xl pb-[3rem] font-silkscreen">
         Contact Us!
       </h2>
-      <form>
+      <form class="flex flex-col w-[90%] max-w-[600px]">
         <input
           type="text"
           name="Name"
           placeholder="Your Name"
+          id="name"
           required
           class=""
         />
+        <label for="name">Your Name</label>
         <input
           type="email"
           name="Email"
           placeholder="Email"
+          id="email"
           required
           class=""
         />
+        <label for="email">Email Id</label>
         <textarea
           name="Message"
           placeholder="Message"
+          id="message"
+          rows="8"
           required
-          class=""
+          class="w-full p-[10px] text-black bg-transparent text-[15px] border-[1px] border-black emailMessage"
         ></textarea>
-        <button type="submit" class="">Send</button>
+        <label for="message">Your Message</label>
+        <button type="submit" class="">SEND</button>
       </form>
     </section>
     <section
