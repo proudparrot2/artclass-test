@@ -312,38 +312,44 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="py-[4rem] bg-white items-center justify-center flex flex-col">
+    <section
+      id="contact"
+      class="py-[4rem] bg-white items-center justify-center flex flex-col"
+    >
       <h2 class="text-center text-4xl pb-[3rem] font-silkscreen">
         Contact Us!
       </h2>
       <form class="flex flex-col w-[90%] max-w-[600px]">
-        <input
-          type="text"
-          name="Name"
-          placeholder="Your Name"
-          id="name"
-          required
-          class="w-full p-[10px] text-black bg-transparent text-[15px] border-[1px] border-black noOutline"
-        />
-        <label for="name">Your Name</label>
-        <input
-          type="email"
-          name="Email"
-          placeholder="Email"
-          id="email"
-          required
-          class="w-full p-[10px] text-black bg-transparent text-[15px] border-[1px] border-black noOutline"
-        />
-        <label for="email">Email Id</label>
-        <textarea
-          name="Message"
-          placeholder="Message"
-          id="message"
-          rows="8"
-          required
-          class="w-full p-[10px] text-black bg-transparent text-[15px] border-[1px] border-black noOutline"
-        ></textarea>
-        <label for="message">Your Message</label>
+        <div class="mb-[30px]">
+          <input
+            type="text"
+            name="Name"
+            id="name"
+            required
+            class="w-full p-[10px] text-black bg-transparent text-[15px] border-[1px] border-black noOutline"
+          />
+          <label for="name">Your Name</label>
+        </div>
+        <div class="mb-[30px]">
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            required
+            class="w-full p-[10px] text-black bg-transparent text-[15px] border-[1px] border-black noOutline"
+          />
+          <label for="email">Email Id</label>
+        </div>
+        <div class="mb-[30px]">
+          <textarea
+            name="Message"
+            id="message"
+            rows="8"
+            required
+            class="w-full p-[10px] text-black bg-transparent text-[15px] border-[1px] border-black noOutline"
+          ></textarea>
+          <label for="message">Your Message</label>
+        </div>
         <button type="submit" class="">SEND</button>
       </form>
     </section>
