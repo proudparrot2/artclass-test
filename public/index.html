@@ -320,7 +320,7 @@
         Contact Us!
       </h2>
       <form class="flex flex-col w-[90%] max-w-[600px]">
-        <div class="mb-[30px]">
+        <div class="mb-[30px] relative">
           <input
             type="text"
             name="Name"
@@ -328,9 +328,9 @@
             required
             class="w-full p-[10px] text-black bg-transparent text-[15px] border-[1px] border-black noOutline"
           />
-          <label for="name">Your Name</label>
+          <label for="name" class="h-full absolute left-0 top-0 p-[10px] cursor-text">Your Name</label>
         </div>
-        <div class="mb-[30px]">
+        <div class="mb-[30px] relative">
           <input
             type="email"
             name="Email"
@@ -338,9 +338,9 @@
             required
             class="w-full p-[10px] text-black bg-transparent text-[15px] border-[1px] border-black noOutline"
           />
-          <label for="email">Email Id</label>
+          <label for="email" class="h-full absolute left-0 top-0 p-[10px] cursor-text">Email Id</label>
         </div>
-        <div class="mb-[30px]">
+        <div class="mb-[30px] relative">
           <textarea
             name="Message"
             id="message"
@@ -348,9 +348,9 @@
             required
             class="w-full p-[10px] text-black bg-transparent text-[15px] border-[1px] border-black noOutline"
           ></textarea>
-          <label for="message">Your Message</label>
+          <label for="message" class="h-full absolute left-0 top-0 p-[10px] cursor-text">Your Message</label>
         </div>
-        <button type="submit" class="">SEND</button>
+        <button type="submit" class="contactButton noOutline bg-transparent border-[1px] border-black w-full">SEND</button>
       </form>
     </section>
     <section

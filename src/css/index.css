@@ -14,3 +14,7 @@ body {
 .noOutline {
   outline: 0;
 }
+
+.contactButton {
+  padding: 10, 0;
+}
