@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/alpinejs" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/6140fd0996.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/6140fd0996.js"
+      crossorigin="anonymous"
+    ></script>
     <script>
       tailwind.config = {
         theme: {
@@ -74,6 +77,9 @@
         class="text-niceWhite my-1 mx-2 font-dmSans font-medium hidden md:flex"
       >
         <li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker">
+          <a href="#home">Home</a>
+        </li>
+        <li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker">
           <a href="#products">Products</a>
         </li>
         <li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker">
@@ -124,6 +130,11 @@
             class="text-niceWhite text-lg sm:text-base flex absolute right-0 top-[60px] h-screen w-screen px-2 flex-col items-center font-dmSans font-semibold sm:font-medium bg-sweetBlue"
             :class="{'bg-gray-500': scrolledFromTop}"
           >
+           <li
+              class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker"
+            >
+              <a href="#home">Home</a>
+            </li>
             <li
               class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker"
             >
