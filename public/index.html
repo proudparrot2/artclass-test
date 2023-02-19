@@ -130,7 +130,7 @@
             class="text-niceWhite text-lg sm:text-base flex absolute right-0 top-[60px] h-screen w-screen px-2 flex-col items-center font-dmSans font-semibold sm:font-medium bg-sweetBlue"
             :class="{'bg-gray-500': scrolledFromTop}"
           >
-           <li
+            <li
               class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker"
             >
               <a href="#home">Home</a>
@@ -332,47 +332,53 @@
         Contact Us!
       </h2>
       <form class="flex flex-col w-[90%] max-w-[600px] font-dmSans text-base">
-        <div class="mb-[30px] relative">
+        <div class="mb-[30px] relative" x-data="{value: ''}">
           <input
             type="text"
             name="Name"
             id="name"
             required
             class="peer/input w-full p-[10px] text-black bg-transparent text-[15px] border-[1px] border-black noOutline hover:bg-black/10 transition"
+            x-model="value"
           />
           <label
             for="name"
-            class="h-full absolute left-0 top-0 p-[10px] cursor-text transition-all peer-focus/input:top-[-35px] peer-focus/input:text-sm peer-valid/input:top-[-35px] peer-valid/input:text-sm"
+            class="h-full absolute left-0 top-0 p-[10px] cursor-text transition-all peer-focus/input:top-[-35px] peer-focus/input:text-sm"
+            :class="{'top-[-35px] text-sm': value.length > 0}"
           >
             <i class="fa-solid fa-user"></i> Your Name
           </label>
         </div>
-        <div class="mb-[30px] relative">
+        <div class="mb-[30px] relative" x-data="{value: ''}">
           <input
             type="email"
             name="Email"
             id="email"
             required
             class="peer/input w-full p-[10px] text-black bg-transparent text-[15px] border-[1px] border-black noOutline hover:bg-black/10 transition"
+            x-model="value"
           />
           <label
             for="email"
-            class="h-full absolute left-0 top-0 p-[10px] cursor-text transition-all peer-focus/input:top-[-35px] peer-focus/input:text-sm peer-valid/input:top-[-35px] peer-valid/input:text-sm"
+            class="h-full absolute left-0 top-0 p-[10px] cursor-text transition-all peer-focus/input:top-[-35px] peer-focus/input:text-sm"
+            :class="{'top-[-35px] text-sm': value.length > 0}"
           >
             <i class="fa-solid fa-envelope"></i> Email Id
           </label>
         </div>
-        <div class="mb-[30px] relative">
+        <div class="mb-[30px] relative" x-data="{value: ''}">
           <textarea
             name="Message"
             id="message"
             rows="8"
             required
             class="peer/input w-full p-[10px] text-black bg-transparent text-[15px] border-[1px] border-black noOutline hover:bg-black/10 transition"
+            x-model="value"
           ></textarea>
           <label
             for="message"
-            class="h-full absolute left-0 top-0 p-[10px] cursor-text transition-all peer-focus/input:top-[-35px] peer-focus/input:text-sm peer-valid/input:top-[-35px] peer-valid/input:text-sm"
+            class="h-full absolute left-0 top-0 p-[10px] cursor-text transition-all peer-focus/input:top-[-35px] peer-focus/input:text-sm"
+            :class="{'top-[-35px] text-sm': value.length > 0}"
           >
             <i class="fa-solid fa-comments"></i> Your Message
           </label>
