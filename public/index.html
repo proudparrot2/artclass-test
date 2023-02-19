@@ -63,8 +63,8 @@
     <nav
       x-data="{scrolledFromTop: false}"
       @scroll.window="window.pageYOffset >= 360 ? scrolledFromTop = true : scrolledFromTop = false"
-      class="fixed top-0 justify-between items-center flex py-2 w-full bg-transparent"
-      :class="{'bg-black/80': scrolledFromTop, 'bg-sweetBlue': menu, 'bg-gray-500': scrolledFromTop && menu}"
+      class="fixed top-0 justify-between items-center flex py-2 w-full"
+      :class="{'bg-black/80': scrolledFromTop && !menu, 'bg-sweetBlue': !scrolledFromTop && menu, 'bg-gray-500': scrolledFromTop && menu, 'bg-transparent': !scrolledFromTop && !menu}"
     >
       <a href="#home">
         <img
