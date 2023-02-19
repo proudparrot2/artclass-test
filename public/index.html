@@ -332,7 +332,12 @@
         Contact Us!
       </h2>
       <form class="flex flex-col w-[90%] max-w-[600px] font-dmSans text-base">
-        <div class="mb-[30px] relative" x-data="{value: ''}">
+        <div
+          class="mb-[30px] relative"
+          x-data="{value: ''}"
+          x-if="!menu"
+          x-show="!menu"
+        >
           <input
             type="text"
             name="Name"
@@ -349,7 +354,12 @@
             <i class="fa-solid fa-user"></i> Your Name
           </label>
         </div>
-        <div class="mb-[30px] relative" x-data="{value: ''}">
+        <div
+          class="mb-[30px] relative"
+          x-data="{value: ''}"
+          x-if="!menu"
+          x-show="!menu"
+        >
           <input
             type="email"
             name="Email"
@@ -366,7 +376,12 @@
             <i class="fa-solid fa-envelope"></i> Email Id
           </label>
         </div>
-        <div class="mb-[30px] relative" x-data="{value: ''}">
+        <div
+          class="mb-[30px] relative"
+          x-data="{value: ''}"
+          x-if="!menu"
+          x-show="!menu"
+        >
           <textarea
             name="Message"
             id="message"
