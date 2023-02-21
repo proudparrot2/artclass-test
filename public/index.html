@@ -76,16 +76,16 @@
       <ul
         class="text-niceWhite my-1 mx-2 font-dmSans font-medium hidden md:flex"
       >
-        <li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker">
+        <li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker" :class="{'hover:bg-white/20': scrolledFromTop && !menu}">
           <a href="#home">Home</a>
         </li>
-        <li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker">
+        <li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker" :class="{'hover:bg-white/20': scrolledFromTop && !menu}">
           <a href="#products">Products</a>
         </li>
-        <li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker">
+        <li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker" :class="{'hover:bg-white/20': scrolledFromTop && !menu}">
           <a href="#about">About</a>
         </li>
-        <li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker">
+        <li class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker" :class="{'hover:bg-white/20': scrolledFromTop && !menu}">
           <a href="#contact">Contact</a>
         </li>
       </ul>
