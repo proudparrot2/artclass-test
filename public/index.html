@@ -28,6 +28,10 @@
               silkscreen: "'Silkscreen', cursive",
             },
           },
+          screens: {
+            ls: '578px',
+            mm: '690px',
+          }
         },
       };
     </script>
@@ -466,15 +470,15 @@
       </a>
     </section>
     <footer class="bg-shadowBlue px-6 pt-6 pb-3">
-      <div class="pb-3 flex text-center items-center justify-center">
+      <div class="pb-3 flex flex-col text-center items-center justify-center mm:flex-row">
         <a href="#home">
           <img
             src="../src/assets/logo.png"
             alt="artclass logo"
-            class="rounded-full w-auto h-20"
+            class="rounded-full w-auto h-15 mm:h-20"
           />
         </a>
-        <ul class="flex px-5 text-white items-center justify-center">
+        <ul class="flex px-5 text-white items-center justify-center text-base mm:text-sm">
           <li>
             <a
               href="#about"
@@ -513,7 +517,7 @@
         </ul>
       </div>
       <div
-        class="text-niceWhite text-sm text-medium justify-between flex items-center"
+        class="text-niceWhite text-xs text-medium justify-between flex items-center ls:text-sm"
       >
         <div class="flex">
           <p
