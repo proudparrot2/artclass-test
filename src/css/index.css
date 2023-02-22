@@ -22,3 +22,8 @@ body {
 .contactButton {
   padding: 10, 0;
 }
+
+.hide {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

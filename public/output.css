@@ -776,6 +776,12 @@ video {
   overflow: hidden;
 }
 
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1164,6 +1170,11 @@ body {
   padding: 10, 0;
 }
 
+.hide {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1288,5 +1299,10 @@ body {
 
   .md\:gap-y-0 {
     row-gap: 0px;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
