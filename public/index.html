@@ -11,8 +11,6 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      const defaultTheme = require("tailwindcss/defaultTheme");
-
       tailwind.config = {
         theme: {
           extend: {
@@ -28,11 +26,6 @@
             fontFamily: {
               dmSans: "'DM Sans', sans-serif",
               silkscreen: "'Silkscreen', cursive",
-            },
-            screens: {
-              "ls": "578px",
-              "mm": "690px",
-              ...defaultTheme.screens,
             },
           },
         },
@@ -486,17 +479,17 @@
     </section>
     <footer class="bg-shadowBlue px-6 pt-6 pb-3">
       <div
-        class="pb-3 flex flex-col text-center items-center justify-center mm:flex-row"
+        class="pb-3 flex flex-col text-center items-center justmdy-center md:flex-row"
       >
         <a href="#home">
           <img
             src="../src/assets/logo.png"
             alt="artclass logo"
-            class="rounded-full w-auto h-15 mm:h-20"
+            class="rounded-full w-auto h-15 sm:h-20"
           />
         </a>
         <ul
-          class="flex flex-col px-5 text-white items-center justify-center text-base mm:text-sm mm:flex-row"
+          class="flex flex-col px-5 text-white items-center justify-center text-base md:text-sm md:flex-row"
         >
           <li>
             <a
