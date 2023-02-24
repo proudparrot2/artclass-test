@@ -19,13 +19,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <style type="text/tailwindcss">
-      @layer base {
-        html {
-          scroll-behavior: smooth;
-        }
-      }
-    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -71,7 +64,7 @@
           class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker"
           :class="{'hover:bg-white/20': scrolledFromTop && !menu}"
         >
-          <a href="#about">About</a>
+          <a href="#about">About Us</a>
         </li>
         <li
           class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker"
@@ -118,8 +111,8 @@
         </button>
         <div x-show="menu" x-cloak>
           <ul
-            class="text-niceWhite text-lg sm:text-base flex absolute right-0 top-[60px] h-screen w-screen px-2 flex-col items-center font-dmSans font-semibold sm:font-medium bg-sweetBlue"
-            :class="{'bg-gray-500': scrolledFromTop}"
+            class="text-niceWhite text-lg sm:text-base flex absolute right-0 top-[60px] h-screen w-screen px-2 flex-col items-center font-dmSans font-semibold sm:font-medium"
+            :class="{'bg-gray-500': scrolledFromTop, 'bg-sweetBlue': !scrolledFromTop}"
           >
             <li
               class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker"
@@ -134,7 +127,7 @@
             <li
               class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker"
             >
-              <a href="#about">About</a>
+              <a href="#about">About Us</a>
             </li>
             <li
               class="transition m-1 px-4 py-[2px] w-auto rounded hover:bg-darker"
@@ -275,7 +268,7 @@
             class="text-slate-900 p-[10px] text-sm font-dmSans h-[175px] items-center hide"
           >
             Electron is a downloadable file with some useful utilities. Electron
-            includes a customizable proxy launcher and an about blank generator.
+            includes a customizable proxy launcher and an about:blank generator.
             Make sure to cover up this file in settings so your teacher doesn't
             see your devious tabs.
           </p>
@@ -477,7 +470,7 @@
             <a
               href="#about"
               class="px-[10px] py-1 mx-2 rounded font-semibold transition-all hover:bg-black/20 hover:text-lightLime m-2"
-              >About us</a
+              >About Us</a
             >
           </li>
           <li>
