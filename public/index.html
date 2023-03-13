@@ -19,6 +19,7 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script type="module" src="../src/js/index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -332,7 +333,14 @@
       <h2 class="text-center text-4xl pb-[3rem] font-silkscreen">
         Contact Us!
       </h2>
-      <form action="https://formsubmit.co/a1b127bcbd7272632c9a7412b69a60cc" method="POST" class="flex flex-col w-[90%] max-w-[600px] font-dmSans text-base">
+      <form id='contactForm' method="POST" class="flex flex-col w-[90%] max-w-[600px] font-dmSans text-base">
+        <!-- Honeypot -->
+        <input type="text" name="_honey" style="display: none;">
+
+        <!-- Remove Captcha -->
+        <input type="hidden" name="_captcha" value="false">
+        
+        <!-- Form -->
         <div
           class="mb-[30px] relative"
           x-data="{value: ''}"

@@ -19,5 +19,8 @@
   "homepage": "https://github.com/proudparrot2/artclass#readme",
   "devDependencies": {
     "tailwindcss": "^3.2.7"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
   }
 }
